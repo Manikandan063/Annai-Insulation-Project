@@ -42,14 +42,14 @@ const Projects = () => {
         
         <div className="relative flex overflow-x-hidden group">
           <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0">
-            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
+            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'Core Carbon', 'Vee Cee Exports', 'Jayapriya Food Products Pvt Ltd', 'White Giant Cashews', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
               <div key={`m1-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
                 <span className="font-bold text-gray-700 text-lg">{client}</span>
               </div>
             ))}
           </div>
           <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0 pl-6 sm:pl-8" aria-hidden="true">
-            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
+            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'Core Carbon', 'Vee Cee Exports', 'Jayapriya Food Products Pvt Ltd', 'White Giant Cashews', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
               <div key={`m2-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
                 <span className="font-bold text-gray-700 text-lg">{client}</span>
               </div>
