@@ -32,6 +32,31 @@ const Projects = () => {
           </div>
         </div>
       </section>
+
+      {/* Trusted Clients Marquee */}
+      <section className="py-16 bg-background border-y border-primary/10 overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-10 text-center">
+          <h2 className="text-3xl font-heading font-bold text-dark">Our Trusted Clients</h2>
+          <div className="w-16 h-1 bg-primary mx-auto mt-3 rounded-full"></div>
+        </div>
+        
+        <div className="relative flex overflow-x-hidden group">
+          <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0">
+            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
+              <div key={`m1-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
+                <span className="font-bold text-gray-700 text-lg">{client}</span>
+              </div>
+            ))}
+          </div>
+          <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0 pl-6 sm:pl-8" aria-hidden="true">
+            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
+              <div key={`m2-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
+                <span className="font-bold text-gray-700 text-lg">{client}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
       
       {/* Testimonials */}
       <section className="py-20 bg-white">
