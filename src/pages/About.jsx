@@ -43,8 +43,8 @@ const About = () => {
               
               <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 gap-8">
                 <div className="glass-card p-6 border-l-4 border-l-primary bg-background/30 hover:-translate-y-1 transition-transform duration-300">
-                  <h4 className="text-4xl font-bold text-primary mb-2">15+</h4>
-                  <p className="text-dark font-medium">Years in Business</p>
+                  <h4 className="text-4xl font-bold text-primary mb-2">25+</h4>
+                  <p className="text-dark font-medium">Years of Experience</p>
                 </div>
                 <div className="glass-card p-6 border-l-4 border-l-secondary bg-background/30 hover:-translate-y-1 transition-transform duration-300">
                   <h4 className="text-4xl font-bold text-secondary mb-2">500+</h4>

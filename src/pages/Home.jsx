@@ -60,7 +60,7 @@ const Home = () => {
             <div className="text-center p-8 glass-card border-none bg-background/50 hover:bg-background transition-colors duration-300">
               <Award size={48} className="text-primary mx-auto mb-6" />
               <h3 className="text-2xl font-bold mb-4">Expert Team</h3>
-              <p className="text-gray-600">Highly skilled professionals with years of industrial experience.</p>
+              <p className="text-gray-600">Highly skilled professionals with 25+ years of industrial experience.</p>
             </div>
           </div>
         </div>
