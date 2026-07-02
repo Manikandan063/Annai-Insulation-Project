@@ -37,7 +37,7 @@ const Projects = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-heading font-bold text-dark mb-4">Client Testimonials</h2>
+            <h2 className="text-4xl font-heading font-bold text-dark mb-4">Client Reviews</h2>
             <div className="w-24 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
           
