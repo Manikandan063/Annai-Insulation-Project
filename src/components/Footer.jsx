@@ -101,7 +101,7 @@ const Footer = () => {
                 <div className="p-2 rounded-lg bg-white/5 text-primary group-hover:bg-primary group-hover:text-white transition-colors mt-0.5">
                   <MapPin size={16} />
                 </div>
-                <span className="text-gray-400 pt-1 leading-snug">2/491, 1st Street, Sri Sowdeshwari Nagar, Veerapandi, Tirupur – 641605</span>
+                <a href="https://maps.app.goo.gl/mCKdt72wZUmEfBuX8" target="_blank" rel="noopener noreferrer" className="text-gray-400 pt-1 leading-snug hover:text-white transition-colors">2/491, 1st Street, Sri Sowdeshwari Nagar, Veerapandi, Tirupur – 641605</a>
               </li>
               <li className="flex items-center gap-3 group">
                 <div className="p-2 rounded-lg bg-white/5 text-primary group-hover:bg-primary group-hover:text-white transition-colors">

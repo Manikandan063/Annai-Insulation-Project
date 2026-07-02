@@ -65,7 +65,7 @@ const Contact = () => {
                 <MapPin size={24} className="text-primary shrink-0 mt-0.5" />
                 <div>
                   <h3 className="text-lg font-bold text-dark mb-1">Our Address</h3>
-                  <p className="text-gray-600 text-sm">2/491, 1st Street, Sri Sowdeshwari Nagar, Veerapandi, Tirupur – 641605</p>
+                  <a href="https://maps.app.goo.gl/mCKdt72wZUmEfBuX8" target="_blank" rel="noopener noreferrer" className="text-gray-600 text-sm hover:text-primary transition-colors block">2/491, 1st Street, Sri Sowdeshwari Nagar, Veerapandi, Tirupur – 641605</a>
                 </div>
               </div>
               
