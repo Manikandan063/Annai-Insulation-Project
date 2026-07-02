@@ -59,14 +59,14 @@ const Navbar = () => {
       >
         <div className="flex justify-between items-center">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-2 group relative z-10 mr-2">
+          <Link to="/" className="flex items-center gap-2 group relative z-10 mr-2 flex-shrink-0">
             <img 
               src={logo} 
               alt="Annai Insulation Logo" 
-              className={`transition-all duration-300 object-contain drop-shadow-md group-hover:scale-105 ${scrolled ? 'h-8 md:h-10' : 'h-10 md:h-12 lg:h-14'}`}
+              className={`transition-all duration-300 object-contain drop-shadow-md group-hover:scale-105 ${scrolled ? 'h-8 md:h-9' : 'h-9 md:h-10 lg:h-12'}`}
             />
             <div className="flex flex-col justify-center">
-              <span className={`text-lg md:text-xl xl:text-2xl font-logo font-black tracking-tight transition-colors duration-300 whitespace-nowrap leading-none ${scrolled ? 'text-dark' : 'text-white'} drop-shadow-sm notranslate`}>
+              <span className={`text-base md:text-lg xl:text-xl font-logo font-black tracking-tight transition-colors duration-300 whitespace-nowrap leading-none ${scrolled ? 'text-dark' : 'text-white'} drop-shadow-sm notranslate`}>
                 {logoText.annai} <span className={`hidden sm:inline ${scrolled ? 'text-primary' : 'text-primary/90'}`}>{logoText.insulation}</span>
               </span>
               <span className={`sm:hidden text-[10px] md:text-xs font-logo font-bold tracking-[0.2em] transition-colors duration-300 leading-tight ${scrolled ? 'text-primary' : 'text-primary/90'} notranslate`}>
@@ -76,14 +76,14 @@ const Navbar = () => {
           </Link>
           
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center gap-1 lg:gap-2 xl:gap-3">
+          <div className="hidden lg:flex items-center gap-1 xl:gap-2 overflow-hidden">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`relative px-3 lg:px-4 xl:px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 overflow-hidden group whitespace-nowrap
+                  className={`relative px-2 xl:px-4 py-1.5 xl:py-2 rounded-full font-medium text-xs xl:text-sm transition-all duration-300 overflow-hidden group whitespace-nowrap
                     ${isActive 
                       ? (scrolled ? 'text-white bg-primary shadow-md' : 'text-primary bg-white shadow-md') 
                       : (scrolled ? 'text-gray-600 hover:text-primary hover:bg-primary/5' : 'text-gray-200 hover:text-white hover:bg-white/10')
