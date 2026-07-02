@@ -50,7 +50,7 @@ const Projects = () => {
               { name: 'Vee Cee Exports', logo: '/clients/veecee.png' },
               { name: 'Jayapriya Food', logo: '/clients/jayapriya.png' },
               { name: 'White Giant Cashews', logo: '/clients/whitegaint.webp' },
-              { name: 'Milky Mist', logo: '/clients/milkymist.png' },
+              { name: 'Milky Mist', logo: '/clients/milkymist.avif' },
               { name: 'Aavin Dairy', logo: '/clients/aavin.png' },
               { name: 'Sakthi Masala', logo: '/clients/sakthi.png' }
             ];
