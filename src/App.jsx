@@ -1,5 +1,6 @@
 import { Suspense, lazy } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HelmetProvider } from 'react-helmet-async';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import ScrollTop from './components/ScrollTop';
@@ -16,7 +17,8 @@ const NotFound = lazy(() => import('./pages/NotFound'));
 
 function App() {
   return (
-    <Router>
+    <HelmetProvider>
+      <Router>
       <ScrollToTopRoute />
       <div className="flex flex-col min-h-screen">
         <Navbar />
@@ -42,6 +44,7 @@ function App() {
         <WhatsAppButton />
       </div>
     </Router>
+    </HelmetProvider>
   );
 }
 

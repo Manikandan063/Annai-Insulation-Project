@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { MapPin, Phone, Mail, FileText, Send } from 'lucide-react';
 import bgImage from '../assets/images/WhatsApp Image 2026-07-01 at 5.08.12 PM.jpeg';
 
@@ -38,6 +39,10 @@ const Contact = () => {
 
   return (
     <div className="bg-background min-h-screen">
+      <Helmet>
+        <title>Contact Us - Annai Insulation</title>
+        <meta name="description" content="Get in touch with Annai Insulation for a free consultation and quotation on your insulation needs." />
+      </Helmet>
       {/* Page Header */}
       <section className="bg-dark text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">

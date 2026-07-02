@@ -1,9 +1,14 @@
 import { Target, Eye, Gem } from 'lucide-react';
+import { Helmet } from 'react-helmet-async';
 import boilerWorksImg from '../assets/images/WhatsApp Image 2026-07-01 at 5.08.11 PM.jpeg';
 
 const About = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>About Us - Annai Insulation</title>
+        <meta name="description" content="Learn about Annai Insulation's 25+ years of experience in delivering excellence in industrial insulation." />
+      </Helmet>
       {/* Page Header */}
       <section className="bg-dark text-white pt-32 pb-20 relative overflow-hidden">
         <div className="absolute inset-0 opacity-20">

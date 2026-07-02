@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { ArrowRight, ShieldCheck, Clock, Award } from 'lucide-react';
 import ServiceCard from '../components/ServiceCard';
 import ProjectCard from '../components/ProjectCard';
@@ -9,6 +10,10 @@ import boilerWorksImg from '../assets/images/WhatsApp Image 2026-07-01 at 5.08.1
 const Home = () => {
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Home - Annai Insulation</title>
+        <meta name="description" content="Professional Industrial Insulation Solutions including Boiler, Steam Pipeline, Thermal Insulation and Aluminium Cladding." />
+      </Helmet>
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
