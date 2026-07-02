@@ -76,14 +76,14 @@ const Navbar = () => {
           </Link>
           
           {/* Desktop Links */}
-          <div className="hidden lg:flex items-center space-x-0 xl:space-x-1">
+          <div className="hidden lg:flex items-center gap-1 lg:gap-2 xl:gap-3">
             {navLinks.map((link) => {
               const isActive = location.pathname === link.path;
               return (
                 <Link
                   key={link.name}
                   to={link.path}
-                  className={`relative px-2 lg:px-3 xl:px-4 py-2 rounded-full font-medium text-sm transition-all duration-300 overflow-hidden group
+                  className={`relative px-3 lg:px-4 xl:px-5 py-2 rounded-full font-medium text-sm transition-all duration-300 overflow-hidden group whitespace-nowrap
                     ${isActive 
                       ? (scrolled ? 'text-white bg-primary shadow-md' : 'text-primary bg-white shadow-md') 
                       : (scrolled ? 'text-gray-600 hover:text-primary hover:bg-primary/5' : 'text-gray-200 hover:text-white hover:bg-white/10')
