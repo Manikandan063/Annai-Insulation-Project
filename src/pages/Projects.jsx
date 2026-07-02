@@ -41,20 +41,46 @@ const Projects = () => {
         </div>
         
         <div className="relative flex overflow-x-hidden group">
-          <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0">
-            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'Core Carbon', 'Vee Cee Exports', 'Jayapriya Food Products Pvt Ltd', 'White Giant Cashews', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
-              <div key={`m1-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
-                <span className="font-bold text-gray-700 text-lg">{client}</span>
+          {(() => {
+            const clients = [
+              { name: 'GRB Ghee', logo: '/clients/grb.png' },
+              { name: 'Aroma Milk', logo: '/clients/aroma.png' },
+              { name: 'Udhaya Krishna Ghee', logo: '/clients/udhayakrishna.png' },
+              { name: 'Core Carbon', logo: '/clients/corecarbon.png' },
+              { name: 'Vee Cee Exports', logo: '/clients/veecee.png' },
+              { name: 'Jayapriya Food', logo: '/clients/jayapriya.png' },
+              { name: 'White Giant Cashews', logo: '/clients/whitegiant.png' },
+              { name: 'Milky Mist', logo: '/clients/milkymist.png' },
+              { name: 'Aavin Dairy', logo: '/clients/aavin.png' },
+              { name: 'Sakthi Masala', logo: '/clients/sakthi.png' }
+            ];
+            
+            const renderClients = (prefix) => clients.map((client, idx) => (
+              <div key={`${prefix}-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] h-[100px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
+                <img 
+                  src={client.logo} 
+                  alt={client.name} 
+                  className="max-h-full max-w-full object-contain"
+                  onError={(e) => {
+                    e.currentTarget.style.display = 'none';
+                    e.currentTarget.nextElementSibling.style.display = 'block';
+                  }}
+                />
+                <span className="font-bold text-gray-700 text-lg hidden text-center">{client.name}</span>
               </div>
-            ))}
-          </div>
-          <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0 pl-6 sm:pl-8" aria-hidden="true">
-            {['GRB Ghee', 'Aroma Milk', 'Udhaya Krishna Ghee', 'Core Carbon', 'Vee Cee Exports', 'Jayapriya Food Products Pvt Ltd', 'White Giant Cashews', 'SMMT Power Pvt Ltd', 'TexCo Industries', 'Milky Mist', 'Aavin Dairy', 'Sakthi Masala'].map((client, idx) => (
-              <div key={`m2-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
-                <span className="font-bold text-gray-700 text-lg">{client}</span>
-              </div>
-            ))}
-          </div>
+            ));
+
+            return (
+              <>
+                <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0">
+                  {renderClients('m1')}
+                </div>
+                <div className="animate-marquee flex items-center gap-6 sm:gap-8 py-4 whitespace-nowrap min-w-full shrink-0 pl-6 sm:pl-8" aria-hidden="true">
+                  {renderClients('m2')}
+                </div>
+              </>
+            );
+          })()}
         </div>
       </section>
       
