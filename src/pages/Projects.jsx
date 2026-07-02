@@ -43,7 +43,7 @@ const Projects = () => {
         <div className="relative flex overflow-x-hidden group">
           {(() => {
             const clients = [
-              { name: 'GRB Ghee', logo: '/clients/grb.jpg' },
+              { name: 'GRB Ghee', logo: '/clients/grb.webp' },
               { name: 'Aroma Milk', logo: '/clients/aroma.png' },
               { name: 'Udhaya Krishna Ghee', logo: '/clients/udhayakrishna.png' },
               { name: 'Core Carbon', logo: '/clients/corecarbon.webp' },
