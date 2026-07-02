@@ -6,7 +6,8 @@ const languages = [
   { code: 'ta', name: 'Tamil' },
   { code: 'te', name: 'Telugu' },
   { code: 'kn', name: 'Kannada' },
-  { code: 'hi', name: 'Hindi' }
+  { code: 'hi', name: 'Hindi' },
+  { code: 'ml', name: 'Malayalam' }
 ];
 
 const LanguageSwitcher = ({ scrolled }) => {
@@ -26,7 +27,7 @@ const LanguageSwitcher = ({ scrolled }) => {
         new window.google.translate.TranslateElement(
           {
             pageLanguage: 'en',
-            includedLanguages: 'en,hi,ta,te,kn',
+            includedLanguages: 'en,hi,ta,te,kn,ml',
             autoDisplay: false,
           },
           'google_translate_element'
