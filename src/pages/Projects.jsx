@@ -43,13 +43,13 @@ const Projects = () => {
         <div className="relative flex overflow-x-hidden group">
           {(() => {
             const clients = [
-              { name: 'GRB Ghee', logo: '/clients/grb.png' },
+              { name: 'GRB Ghee', logo: '/clients/grb.jpg' },
               { name: 'Aroma Milk', logo: '/clients/aroma.png' },
               { name: 'Udhaya Krishna Ghee', logo: '/clients/udhayakrishna.png' },
-              { name: 'Core Carbon', logo: '/clients/corecarbon.png' },
+              { name: 'Core Carbon', logo: '/clients/corecarbon.webp' },
               { name: 'Vee Cee Exports', logo: '/clients/veecee.png' },
               { name: 'Jayapriya Food', logo: '/clients/jayapriya.png' },
-              { name: 'White Giant Cashews', logo: '/clients/whitegiant.png' },
+              { name: 'White Giant Cashews', logo: '/clients/whitegaint.webp' },
               { name: 'Milky Mist', logo: '/clients/milkymist.png' },
               { name: 'Aavin Dairy', logo: '/clients/aavin.png' },
               { name: 'Sakthi Masala', logo: '/clients/sakthi.png' }
