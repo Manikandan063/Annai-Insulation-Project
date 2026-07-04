@@ -43,20 +43,20 @@ const Projects = () => {
         <div className="relative flex overflow-x-hidden group">
           {(() => {
             const clients = [
-              { name: 'GRB Ghee', logo: '/clients/grb.webp' },
+              { name: 'GRB Ghee', logo: '/clients/grb1.jpg' },
               { name: 'Aroma Milk', logo: '/clients/aroma.png' },
-              { name: 'Udhaya Krishna Ghee', logo: '/clients/udhayakrishna.png' },
+              { name: 'Udhaya Krishna Ghee', logo: '/clients/udhayakrishna.webp' },
               { name: 'Core Carbon', logo: '/clients/corecarbon.webp' },
               { name: 'Vee Cee Exports', logo: '/clients/veecee.png' },
               { name: 'Jayapriya Food', logo: '/clients/jayapriya.png' },
               { name: 'White Giant Cashews', logo: '/clients/whitegaint.webp' },
               { name: 'Milky Mist', logo: '/clients/milkymist.avif' },
               { name: 'Aavin Dairy', logo: '/clients/aavin.png' },
-              { name: 'Sakthi Masala', logo: '/clients/sakthi.png' }
+              { name: 'Sakthi Masala', logo: '/clients/sakthi.jpg' }
             ];
             
             const renderClients = (prefix) => clients.map((client, idx) => (
-              <div key={`${prefix}-${idx}`} className="bg-white px-8 py-4 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[200px] h-[100px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
+              <div key={`${prefix}-${idx}`} className="bg-white px-6 py-3 rounded-xl shadow-sm border border-gray-100 flex items-center justify-center min-w-[140px] h-[70px] hover:shadow-md hover:border-primary/30 transition-all cursor-default">
                 <img 
                   src={client.logo} 
                   alt={client.name} 
@@ -66,7 +66,7 @@ const Projects = () => {
                     e.currentTarget.nextElementSibling.style.display = 'block';
                   }}
                 />
-                <span className="font-bold text-gray-700 text-lg hidden text-center">{client.name}</span>
+                <span className="font-bold text-gray-700 text-base hidden text-center">{client.name}</span>
               </div>
             ));
 
